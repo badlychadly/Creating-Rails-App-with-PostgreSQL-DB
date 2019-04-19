@@ -6,7 +6,7 @@ As a Developer it's nice to know that the Rails app you plan on making a masterp
 Before you can use PostgreSQL you need to make sure you have it installed. If you still have to install in check out the PostgreSQL [docs](https://www.postgresql.org/) then come back!
 Now let's create a new React app by running `rails new app_name --api --database=postgresql -T`. The `--api` flag tells Rails that this is just an API and there is no need for the heft of a full Rails app. The `-T` flag tells rails to not include the out of the box test configuration so that we can include the testing framework of our choice. 
 
-### Configure the db
+### Configure the DB
 The pg gem will need to be added in order to interface with the database. You may need to create a role using `psql` in the terminal, unless you are ok with the default role assigned. Assuming you are in the directory of your new Rails app navigate to config/database.yml. This file is where we will tell the Rails app what database to use. It should resemble this when first opened.
 ```
 default: &default
